@@ -1,0 +1,17 @@
+{
+  "short_name": "NovaGIF",
+  "name": "NovaGIF Studio",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "type": "image/svg+xml",
+      "sizes": "any",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#0d0e12",
+  "theme_color": "#a855f7",
+  "display": "standalone",
+  "orientation": "any"
+}
