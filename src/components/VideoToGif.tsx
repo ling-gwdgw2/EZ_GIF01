@@ -220,11 +220,11 @@ export const VideoToGif: React.FC = () => {
           </div>
         ) : (
           <div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+            <div className="tool-header-toolbar">
               <span className="brand-badge" style={{ textTransform: 'none' }}>
                 ไฟล์: {videoFile?.name} ({((videoFile?.size || 0) / (1024 * 1024)).toFixed(2)} MB)
               </span>
-              <button onClick={clearAll} className="btn btn-danger" style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}>
+              <button onClick={clearAll} className="btn btn-danger">
                 ล้างทั้งหมด
               </button>
             </div>

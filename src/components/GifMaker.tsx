@@ -212,20 +212,18 @@ export const GifMaker: React.FC = () => {
         ) : (
           <div>
             {/* Header Toolbar */}
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
-              <div style={{ display: 'flex', gap: '1rem', alignItems: 'center' }}>
+            <div className="tool-header-toolbar">
+              <div className="tool-header-group">
                 <span className="brand-badge">{images.length} รูปภาพ</span>
                 <button 
                   onClick={triggerFileInput} 
                   className="btn btn-secondary" 
-                  style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}
                 >
                   เพิ่มรูปภาพ
                 </button>
                 <button 
                   onClick={sortAllImagesByName} 
                   className="btn btn-secondary" 
-                  style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}
                 >
                   จัดเรียงตามชื่อไฟล์
                 </button>
@@ -238,7 +236,7 @@ export const GifMaker: React.FC = () => {
                   onChange={handleFileChange}
                 />
               </div>
-              <button onClick={clearAll} className="btn btn-danger" style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}>
+              <button onClick={clearAll} className="btn btn-danger">
                 ล้างทั้งหมด
               </button>
             </div>

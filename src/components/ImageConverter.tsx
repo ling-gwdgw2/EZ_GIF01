@@ -1067,7 +1067,7 @@ ${escapeHtml(documentText)}
           </div>
         ) : (
           <div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+            <div className="tool-header-toolbar">
               <span className="brand-badge" style={{ textTransform: 'none', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                 {fileCategory === 'image' && <ImageIcon size={14} />}
                 {fileCategory === 'audio' && <Music size={14} />}
@@ -1075,7 +1075,7 @@ ${escapeHtml(documentText)}
                 {fileCategory === 'document' && <FileText size={14} />}
                 {batchItems.length > 1 ? `แบทช์: ${batchItems.length} ไฟล์` : `ไฟล์: ${fileDetails?.name}`} ({getFileSizeLabel(fileDetails?.size || 0)})
               </span>
-              <button onClick={clearAll} className="btn btn-danger" style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}>
+              <button onClick={clearAll} className="btn btn-danger">
                 ล้างทั้งหมด
               </button>
             </div>

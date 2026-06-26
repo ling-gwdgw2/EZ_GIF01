@@ -156,17 +156,17 @@ export const GifSplitter: React.FC = () => {
           </div>
         ) : (
           <div>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '1.5rem' }}>
+            <div className="tool-header-toolbar">
               <span className="brand-badge" style={{ textTransform: 'none' }}>
                 ไฟล์: {gifFile?.name} ({frames.length} เฟรมพร้อมดาวน์โหลด)
               </span>
-              <div style={{ display: 'flex', gap: '0.75rem' }}>
+              <div className="tool-header-group">
                 {frames.length > 0 && (
-                  <button onClick={downloadAllFrames} className="btn btn-primary" style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}>
+                  <button onClick={downloadAllFrames} className="btn btn-primary">
                     ดาวน์โหลดทุกเฟรม
                   </button>
                 )}
-                <button onClick={clearAll} className="btn btn-danger" style={{ padding: '0.5rem 1rem', fontSize: '0.85rem' }}>
+                <button onClick={clearAll} className="btn btn-danger">
                   ล้างทั้งหมด
                 </button>
               </div>
