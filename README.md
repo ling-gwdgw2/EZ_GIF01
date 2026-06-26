@@ -1,7 +1,6 @@
 # NovaGIF Studio(EZ_GIF01)
 
 เครื่องมือจัดการ จัดระเบียบ สร้าง และแปลงไฟล์ GIF/มัลติมีเดียบนเบราว์เซอร์สไตล์ **Retro 8-Bit / Arcade Neon Glassmorphic** 
-
 **ลิงก์เข้าใช้งานแอปพลิเคชันออนไลน์:** [https://ling-gwdgw2.github.io/EZ_GIF01/](https://ling-gwdgw2.github.io/EZ_GIF01/)
 
 ---
@@ -14,7 +13,7 @@
 
 ---
 
-## 📁 โครงสร้างโปรเจกต์ (Project Structure)
+## โครงสร้างโปรเจกต์ (Project Structure)
 ```text
 ezgif-clone/
 ├── dist/                      # โฟลเดอร์ที่ได้จากการคอมไพล์สำหรับนำไป Deploy
